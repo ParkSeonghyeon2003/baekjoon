@@ -15,14 +15,14 @@ int main(void)
 	cin >> N >> S >> del >> drag;
 
 	// HYU 카운팅 & 소문자 파싱
-	for (int i = 0; i < S.length(); i++) {
-		if (S[i] >= 'a' && S[i] <= 'z') {
-			temp += S[i];
+	for (auto &chr : S) {
+		if (chr >= 'a' && chr <= 'z') {
+			temp += chr;
 			continue;
 		}
-		else if (S[i] == 'H') cnt[hCnt]++;
-		else if (S[i] == 'Y') cnt[yCnt]++;
-		else if (S[i] == 'U') cnt[uCnt]++;
+		else if (chr == 'H') cnt[hCnt]++;
+		else if (chr == 'Y') cnt[yCnt]++;
+		else if (chr == 'U') cnt[uCnt]++;
 		if (!temp.empty()) {
 			v.push_back(temp);
 			temp = "";
@@ -31,7 +31,7 @@ int main(void)
 	if (!temp.empty()) v.push_back(temp);
 
 	// 에너지 계산
-	for (auto lowAlps : v) {
+	for (auto &lowAlps : v) {
 		int dragE = drag + del;
 		int delE = lowAlps.length() * del;
 		energy += dragE < delE ? dragE : delE;
