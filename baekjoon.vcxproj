@@ -135,6 +135,7 @@
     <ClCompile Include="Codes\18917.cpp" />
     <ClCompile Include="Codes\24051.cpp" />
     <ClCompile Include="Codes\24498.cpp" />
+    <ClCompile Include="Codes\25206.cpp" />
     <ClCompile Include="Codes\25304.cpp" />
     <ClCompile Include="Codes\25314.cpp" />
     <ClCompile Include="Codes\2729.cpp" />
