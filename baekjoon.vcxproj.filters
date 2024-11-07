@@ -31,5 +31,7 @@
     <ClCompile Include="Codes\2670.cpp" />
     <ClCompile Include="codes\10992.cpp" />
     <ClCompile Include="codes\28014.cpp" />
+    <ClCompile Include="28278.cpp" />
+    <ClCompile Include="18258.cpp" />
   </ItemGroup>
 </Project>
